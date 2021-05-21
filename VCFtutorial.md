@@ -22,6 +22,13 @@ foo@bar:~$ head myVCF.vcf
 
 2. Our second strategy might be to pull out the lines beginning with '#'. We know that 'grep' will help us pull out specific data. Let's try that. 
 
+```console
+foo@bar:~$ grep # myVCF.vcf
+
+
+```
+Oops! This didn't do exactly what we wanted. We need to specify that the character starts the line. Remember, you can find help with 'grep' commands using 
+
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
