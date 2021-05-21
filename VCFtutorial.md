@@ -46,7 +46,7 @@ foo@bar:~$ grep '#' myVCF.vcf
 ##FILTER=<ID=PASS,Description="All filters passed">
 ##fileDate=20191015
 ##source=freeBayes v1.3.1-dirty
-##reference=/projects/sequence_analysis/vol4/bpow/src/ncgenes2-exome-pipeline/modules/apps/human-genome-for-alignment/1405.15/GRCh38_no_alt_analysis_set.refseqids.fna
+##reference=/projects/sequence_analysis/exome-pipeline/human/GRCh38.refseqids.fna
 ##contig=<ID=1,length=248956422>
 ##contig=<ID=2,length=242193529>
 ##contig=<ID=3,length=198295559>
