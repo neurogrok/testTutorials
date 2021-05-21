@@ -93,13 +93,27 @@ How many lines are in the header?
 
 Will this always be the same in every VCF file? Why or why not? Which strategy do you think is a better way to view the header based on your answer? 
 
+List the required and optional columns for this file format that exist in 'myVCF.vcf'.
+
 What would happen if our variant file has a '#' character somewhere other than the header? Somewhere other than the beginning of the line? Re-write the command to make sure we only retrieve entries with a '#' character at the beginning of the line. 
 
 _Remember, you can refer to the regular expression cheatsheet in this repository for help, or turn to our friend Google._
 
 
+### Exercise 2
+
+How many variants are listed in the 'myVCF.vcf'? 
+
+What criteria would you use to define a deleterious variant? For each of these criteria, how many variants would be returned? 
+
+How would you combine multiple criteria to define deleterious variants? 
 
 
+### Exercise 3 
+
+Save your selected variants in a new file. Is it still a VCF file? Can you open it in Excel? Did you find a potential cause for a genetic condition? What else could you do? 
+
+(Need a lot more lead in here). 
 
 ```
 
