@@ -56,16 +56,13 @@ What would happen if our variant file has a '#' character somewhere other than t
 
 _Remember, you can refer to the regular expression cheatsheet in this repository for help, or turn to our friend Google._
 
-**Bold** _Italic_ `Code` text
 
-[Link](url) and ![Image](src)
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+**Bold** _Italic_ `Code` text
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/neurogrok/testTutorials/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[Link](url) and ![Image](src)
 
 ### Support or Contact
 
