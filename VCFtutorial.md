@@ -31,22 +31,20 @@ foo@bar:~$ head myVCF.vcf
 ##contig=<ID=5,length=181538259>
 ```
 
-That looks promising! We can see some useful information, like what version of the variant format this data adheres to (line 1), when the file was generated (line 3), what software was used to make the variant calls (line 4), and what species and version of the genome was used as a reference (line 5). But maybe we aren't seeing the whole header? Think about how you might discover this information, and we'll do an exercise to answer that question soon. 
+That looks promising! 
 
-2. A second strategy to view the header might be to pull out the lines beginning with '##'. We know that 'grep' will help us pull out specific data. Let's try that. 
+We can see some useful information, like what version of the variant format this data adheres to (line 1), when the file was generated (line 3), what software was used to make the variant calls (line 4), and what species and version of the genome was used as a reference (line 5). 
 
-```console
-foo@bar:~$ grep # myVCF.vcf
+But maybe we aren't seeing the whole header? Think about how you might discover this information, and we'll do an exercise to answer that question soon. 
 
-
-```
-Oops! This didn't do exactly what we wanted. We need to specify that the character starts the line. Remember, you can find help with regular expressions by referring to the cheatsheet in this repository (or our favorite friend, Google). 
+2. A second strategy to view the header might be to pull out the lines beginning with '#'. We know that 'grep' will help us pull out specific data. Let's try that. 
 
 ```console
-foo@bar:~$ grep # myVCF.vcf
-
+foo@bar:~$ grep '#' myVCF.vcf
 
 ```
+Now we have a lot more information! Let's go to some exercises to think about what we're seeing here. 
+
 
 ### Exercise 1
 
@@ -54,9 +52,11 @@ How many lines are in the header?
 
 Will this always be the same in every VCF file? Why or why not? Which strategy do you think is a better way to view the header based on your answer? 
 
+What would happen if our variant file has a '#' character somewhere other than the header? Somewhere other than the beginning of the line? Re-write the command to make sure we only retrieve entries with a '#' character at the beginning of the line. 
 
+_Remember, you can refer to the regular expression cheatsheet in this repository for help, or turn to our friend Google._
 
-**Bold** and _Italic_ and `Code` text
+**Bold** _Italic_ `Code` text
 
 [Link](url) and ![Image](src)
 ```
